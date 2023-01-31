@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Переадресация</title>
+</head>
+<body>
+    {% csrf_token %}
+    <script>
+       location.replace('{{url}}');
+    </script>
+</body>
+</html>
